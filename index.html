@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <header>
+        <title>Bargain Bin Bob's Bottom Barrel Beaters</title>
+        <link rel="icon" type="image/x-icon" href="img/trash-can-iso-premium.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/app.js"></script>
+        
+    </header>
+    <body>
+        <div id="main">
+            <div id="titleBar">
+                <h1>Bargain Bin Bob's Bottom Barrel Beaters</h1>
+                <h3>good cars for cheap</h3>
+            </div>
+            <form id='filters'>
+                
+                <label for='yearFilter'>Year (leave at zero to not filter by year): </label> 
+                <input id='yearFilter' type="number" min="0" max="2099" step="1" value="0"></input><!--from https://stackoverflow.com/questions/34676752/can-i-use-an-html-input-type-date-to-collect-only-a-year --> 
+                <label for='makeFilter'>Make: </label>
+                <input id='makeFilter'></input>
+                <label for='modelFilter'>Model: </label>
+                <input id='modelFilter'></input>
+                <label for='mileageMinFilter'>Minimum mileage: </label>
+                <input id='mileageMinFilter' type='number'></input>
+                <label for='mileageMaxFilter'>Maximum mileage: </label>
+                <input id='mileageMaxFilter' type='number'></input>
+                <label for='priceMinFilter'>Minimum price: </label>
+                <input id='priceMinFilter' type='number'></input>
+                <label for='priceMaxFilter'>Maximum price: </label>
+                <input id='priceMaxFilter' type='number'></input>
+                <script src="js/Filters.js"></script>
+            </form>
+            <div id="CarsCards">
+            <!-- Cards for the filtered cars go here-->
+                <script src="js/CarsCards.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
